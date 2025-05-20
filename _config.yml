@@ -1,7 +1,0 @@
-title: My Jekyll Site
-theme: jekyll-theme-primer
-exclude:
-  - node_modules
-  - vendor
-  - Gemfile
-  - Gemfile.lock
