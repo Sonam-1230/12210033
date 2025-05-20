@@ -1,0 +1,1392 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Lexend', sans-serif;
+  font-size: 16px;
+  background-color: #000;
+  color: #cccccc;
+  margin: 0;
+}
+
+nav {
+  padding: 25px;
+  text-align: left;
+  position: fixed;
+}
+
+.back-icon {
+  font-size: 18px;
+  color: #00EEFF;
+}
+
+.section {
+  padding: 60px 0;
+}
+
+.parallax {
+  background-attachment: fixed;
+}
+
+
+.content {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #00EEFF;
+}
+
+p {
+  line-height: 25px;
+  font-size: 16px;
+  text-align: justify;
+}
+
+
+/* .journey-map-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+} */
+
+.journey-map-header {
+  text-align: center;
+  padding: 20px;
+}
+
+.journey-map-header h1 {
+
+  font-size: 36px;
+  color: #00EEFF;
+  margin-bottom: 10px;
+}
+
+.journey-map-header p {
+  text-align: center;
+  margin: 5px 0;
+}
+
+.problem {
+  list-style-type: disc;
+  /* Change to your preferred bullet style */
+  /* Adjust as needed for spacing */
+}
+
+.ux-case-study {
+  color: #00EEFF;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #333;
+  border-radius: 5px;
+}
+
+.duration {
+  margin-top: 10px;
+  color: #00EEFF;
+}
+
+.journey-map-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.journey-map-text {
+  /* max-width: 100px;
+   */
+  margin-top: -3%;
+}
+
+.journey-map-text h2 {
+  text-align: left;
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #00EEFF;
+  padding-right: 50%;
+
+}
+
+.journey-map-phones {
+  flex: 1;
+  max-width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+  margin-right: 20px;
+}
+
+
+
+.laptop-container {
+  position: relative;
+  justify-content: space-between;
+  margin-left: 10%;
+  margin-top: 10%;
+
+}
+
+.laptop-container .image {
+  width: 20%;   
+  height: 20%; 
+  display: block;
+  margin: 0 auto; 
+}
+
+/* Hover Effects */
+.image-back:hover {
+  transform: scale(1.05);
+  /* Slightly increase size on hover */
+  opacity: 0.8;
+  /* Slightly reduce opacity on hover */
+}
+
+.image-middle:hover {
+  transform: translate(-20%, 20%) scale(1.05);
+  /* Maintain translate and slightly increase size on hover */
+  opacity: 0.8;
+  /* Slightly reduce opacity on hover */
+}
+
+.image-front:hover {
+  transform: translate(-68%, 68%) scale(1.05);
+  /* Maintain translate and slightly increase size on hover */
+  opacity: 0.8;
+  /* Slightly reduce opacity on hover */
+}
+
+
+/* /.................. */
+.phone {
+  width: 45%;
+  transition: transform 0.3s;
+  border: 0.2em solid #00EEFF;
+  border-radius: 20px;
+}
+
+.phone-left {
+  transform: rotate(-10deg);
+}
+
+.phone-right {
+  transform: rotate(10deg);
+}
+
+.phone:hover {
+  transform: scale(1.1);
+}
+
+/* roles and responsobilityies
+ */
+
+.card-role {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.role-card {
+  flex: 1 1 calc(50% - 20px);
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-top: 3px solid #00EEFF;
+}
+
+.role-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+.role-card h3 {
+  color: #00EEFF;
+  margin-bottom: 10px;
+}
+
+.role-card p {
+  color: #ccc;
+}
+
+
+/* Css for the user pain points */
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+  flex-wrap: wrap;
+  /* This allows wrapping in case the screen is too small */
+}
+
+.card-persona {
+  background-color: #1a1a1a;
+  border: 0.2em solid #333;
+  border-radius: 10px;
+  padding: 15px;
+  width: 220px;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+  flex-shrink: 0;
+  /* Prevent shrinking on smaller screens */
+  margin-right: 10px;
+  /* Add margin between cards */
+}
+
+.card-persona:hover {
+  transform: scale(1.05);
+}
+
+.card-number {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: #00EEFF;
+  color: #000;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+
+
+.card-persona h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #00EEFF;
+}
+
+.card-persona p {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* User persona.................. */
+
+.user-persona-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #000000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+
+.user-persona-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.user-persona-card {
+  background-color: #1a1a1a;
+  border: 0.2em solid #333;
+  border-radius: 8px;
+  padding: 20px;
+  flex: 1;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.user-persona-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* .user-image {
+  text-align: center;
+  margin-bottom: 20px;
+} */
+
+.user-image img {
+  width: 60%;
+  height: 60%;
+  object-fit: cover;
+}
+
+.user-details blockquote {
+  font-style: italic;
+  color: #555;
+  margin: 0 0 20px;
+  text-align: center;
+}
+
+.goals-frustrations {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.goals h3,
+.frustrations h3 {
+  margin-bottom: 10px;
+  color: #00EEFF;
+  /* Green color for headers */
+}
+
+.goals ul,
+.frustrations ul {
+  list-style: none;
+  padding: 0;
+}
+
+.goals li,
+.frustrations li {
+  margin-bottom: 10px;
+}
+
+.summary {
+  font-size: 14px;
+  color: #555;
+}
+
+
+
+/*  User Journey Mapss,,,,,,,,,,,,,,,,,,,,,,, */
+.journeymap-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #1a1a1a;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.journeymap-section-title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.journeymap-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.journeymap-text {
+  flex: 1;
+  border-left: 5px solid #00EEFF;
+  /* Green vertical line */
+  padding-left: 15px;
+  margin-right: 20px;
+}
+
+.journeymap-card {
+  flex: 2;
+  background-color: #1a1a1a;
+  border: 0.2em solid #333;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 50%;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.journeymap-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.journeymap-image img {
+ width: 70%;
+  height: 70%;
+  object-fit: cover;
+  
+}
+
+.journeymap-image img:hover {
+  transform: scale(1.05);
+}
+
+.hifi a {
+  color: #00EEFF;
+}
+
+/* User flow css */
+
+.userflow-container {
+  max-width: 1300px;
+  /* Increased the max-width slightly */
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #1a1a1a;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.userflow-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.userflow-card {
+  background-color: #1a1a1a;
+  border: 0.2em solid #333;
+  border-radius: 8px;
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.userflow-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.userflow-image {
+  flex: 1;
+}
+
+.userflow-image img {
+  width: 50%;
+  max-width: 450px;
+  /* Increased the image size slightly */
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.userflow-image img:hover {
+  transform: scale(1.05);
+}
+
+.userflow-text {
+  line-height: 25px;
+  font-size: 16px;
+  flex: 2;
+  color: #cccccc;
+  border-left: 5px solid #00EEFF;
+  padding-left: 30px;
+  /* Moved the green vertical line further to the right */
+}
+
+/* Empathey */
+
+.empathy-container {
+  max-width: 1300px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #1a1a1a;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  /* Centering the cards horizontally */
+}
+
+.empathy-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.empathy-card,
+.empathy-card1 {
+  background-color: #1a1a1a;
+  border: 0.2em solid #333;
+  border-radius: 8px;
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  flex: 1;
+  /* Each card takes equal space */
+}
+
+.empathy-card:hover,
+.empathy-card1:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.empathy-image {
+  flex: 1;
+}
+
+.empathy-image img {
+  width: 100%;
+  max-width: 380px;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.empathy-image img:hover {
+  transform: scale(1.05);
+}
+
+.empathy-text {
+  line-height: 25px;
+  font-size: 16px;
+  flex: 2;
+  color: #cccccc;
+  border-left: 5px solid #00EEFF;
+  padding-left: 30px;
+}
+
+
+
+.paper-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #1a1a1a;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.paper-content {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  gap: 20px;
+}
+
+.left-card {
+  width: 35%;
+  padding-left: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: #1a1a1a;
+}
+
+.paper-card-image {
+  border: 0.2em solid #333;
+  border-radius: 8px;
+}
+
+.right-card {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: #1a1a1a;
+}
+
+.paper-card-image {
+  border: 0.2em solid #333;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.paper-card-image img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.paper-card-image img:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
+  border-radius: 8px;
+}
+
+.paper-text {
+
+  padding: 10px;
+  background-color: #1a1a1a;
+  border: 0.2em solid #333;
+  border-radius: 8px;
+  width: 20%;
+  box-sizing: border-box;
+}
+
+/* FIndings */
+
+.findings-section {
+  max-width: 1200px;
+  /* Increased the max-width slightly */
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #1a1a1a;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.content-finding {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.intro-text {
+  flex: 2;
+  color: #cccccc;
+  border-left: 5px solid #00EEFF;
+  padding-left: 30px;
+}
+
+
+
+.findings-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.round-findings {
+  max-width: 500px;
+  margin: 20px;
+}
+
+.round-findings h3 {
+  color: #00EEFF;
+  margin-bottom: 20px;
+}
+
+.round-findings ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+  position: relative;
+}
+
+.round-findings li {
+  margin-bottom: 20px;
+  position: relative;
+  padding-left: 30px;
+}
+
+.round-findings .line {
+  position: absolute;
+  left: 10px;
+  top: 0;
+  bottom: 20px;
+  width: 2px;
+  background-color: #00EEFF;
+}
+
+.round-findings .line:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: -4px;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+/* mock up */
+
+.mockup-container {
+  display: flex;
+  justify-content: center;
+}
+
+.mockup-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.mockup-card {
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  max-width: 400px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  flex: 1 1 calc(33.333% - 30px);
+}
+
+.image-container {
+  border: 0.2em solid #333;
+  border-radius: 8px;
+  padding: 5px;
+  margin-bottom: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.image-container:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.mockup-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+
+}
+
+
+.mockup-text {
+  margin-top: 10px;
+  font-size: 1em;
+  color: #ddd;
+}
+
+
+.mockup-card img:hover {
+  transform: scale(1.05);
+  /* Slightly increase size on hover */
+  opacity: 0.8;
+}
+
+
+
+.mockup-text::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 5px;
+  background-color: #00EEFF;
+  margin: 15px auto;
+}
+
+
+/* Accessibility */
+.education-content .row {
+  display: flex;
+  border-radius: 5px;
+  height: 60px;
+  margin-bottom: 300px;
+}
+
+.education-content .title {
+  color: #00EEFF;
+}
+
+.education-content .row .education,
+.education-content .row .internship {
+  color: #cccccc;
+  flex: 0 0 50%;
+  max-width: 50%;
+  margin-top: 30px;
+}
+
+.education-content .row .education {
+  max-width: 45%;
+  margin-right: 5%;
+}
+
+.education-content h3.title {
+  font-size: 24px;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.education-content .row.timeline-box {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.education-content .row .timeline {
+  padding: 30px 15px;
+  border: 0.2em solid #333;
+  border-radius: 10px;
+  width: 100%;
+  position: relative;
+}
+
+.education-content .row .timeline-item {
+  position: relative;
+  padding-left: 37px;
+  padding-bottom: 50px;
+}
+
+.education-content .row .internship .timeline-item {
+  padding-bottom: 30px;
+}
+
+.education-content .row .timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+.education-content .row .timeline-item::before {
+  content: "";
+  width: 1px;
+  position: absolute;
+  height: 100%;
+  left: 7px;
+  top: 0;
+  background-color: #00EEFF;
+}
+
+.education-content .row .circle-dot {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: #cccccc;
+}
+
+.education-content .row .timeline-title {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.education-content .row .internship .timeline-title {
+  margin-bottom: 8px;
+}
+
+.education-content .row .timeline-text {
+  line-height: 25px;
+  font-size: 16px;
+  text-align: justify;
+}
+
+.timeline-text {
+  line-height: 25px;
+  font-size: 16px;
+  text-align: justify;
+}
+
+
+/* Foooooterrrrrrrrrrrrrrrrrrrrrrrrrrr */
+/* Footer Styles */
+.footer {
+  background-color: #1a1a1a;
+  padding: 20px;
+  color: #ddd;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.footer-content p {
+  text-align: center;
+}
+
+.footer a {
+  color: #00EEFF;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+
+/* Responsive for 1920px devices */
+@media only screen and (min-width: 1920px) {
+
+  .content {
+    width: 70%;
+  }
+
+  .journey-map-content,
+  .userflow-content,
+  .ux-content {
+    justify-content: space-between;
+  }
+
+  .journey-map-text,
+  .userflow-text,
+  .ux-text {
+    max-width: 50%;
+    margin-bottom: 0;
+  }
+
+  .phone {
+    width: 45%;
+  }
+
+  .card-role {
+    gap: 60px;
+  }
+
+  .role-card {
+    flex: 1 1 calc(33.333% - 60px);
+    /* Three columns */
+  }
+
+  .cards-container {
+    gap: 50px;
+  }
+
+  .card-persona {
+    width: 300px;
+  }
+
+  .user-persona-container {
+    max-width: 100px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #1a1a1a;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .user-persona-row {
+    gap: 60px;
+  }
+
+  .user-persona-card {
+    background-color: #1a1a1a;
+    border: 0.2em solid #333;
+    border-radius: 8px;
+    padding: 20px;
+    flex: 1;
+  }
+
+  .journeymap-container,
+  .userflow-container,
+  .empathy-container,
+  .paper-container,
+  .findings-section {
+    max-width: 1800px;
+  }
+
+  .journeymap-text,
+  .userflow-text,
+  .empathy-text {
+    padding-left: 60px;
+    border-left-width: 9px;
+    /* Thicker vertical line */
+  }
+
+  .journeymap-card {
+    flex: 1 1 50%;
+  }
+
+  /* .userflow-card {
+    flex: 50%;
+  } */
+
+  .mockup-container {
+    flex-wrap: nowrap;
+  }
+
+  .mockup-card {
+    max-width: 340px;
+    margin: 30px;
+  }
+
+  .education-content .row .education,
+  .education-content .row .internship {
+    flex: 0 0 45%;
+    max-width: 45%;
+  }
+
+  .education-content .row .timeline-item {
+    padding-bottom: 50px;
+  }
+}
+
+/* Responsive for 1536px devices */
+@media only screen and (min-width: 1536px) {
+
+  .content {
+    width: 75%;
+  }
+
+  .journey-map-content,
+  .userflow-content,
+  .ux-content {
+    justify-content: space-between;
+  }
+
+  .journey-map-text,
+  .userflow-text,
+  .ux-text {
+    max-width: 55%;
+    margin-bottom: 0;
+  }
+
+  .phone {
+    width: 45%;
+  }
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+  h2 {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+  }
+
+  .journey-map-content,
+  .userflow-content,
+  .ux-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .journey-map-text,
+  .userflow-text,
+  .ux-text {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+
+  .phone {
+    width: 80%;
+  }
+
+  .card-role {
+    margin-top: 20px;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .role-card {
+    flex: 1 1 100%;
+  }
+
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+
+  .section {
+    padding: 0;
+  }
+
+
+  .mockup-card {
+    max-width: 100%;
+    /* Full width for phones */
+    flex: 1 1 100%;
+    /* Stack cards in a column */
+  }
+
+  .journeymap-text,
+  .userflow-text,
+  .ux-text {
+    padding-left: 0;
+    border-left: none;
+  }
+
+  .journeymap-card,
+  .userflow-card,
+  .ux-card {
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+  }
+
+  /* User journey map */
+  .journeymap-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .journeymap-text,
+  .journeymap-card {
+    width: 100%;
+    margin-right: 0;
+    max-width: 95%;
+  }
+
+  .journeymap-text {
+    border-left: none;
+    border-top: 5px solid #00EEFF;
+    /* Green horizontal line for mobile */
+    padding-top: 15px;
+  }
+
+  .journey-map-phones {
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-right: 0;
+  }
+
+
+  .journeymap-image img {
+    width: 100%;
+  }
+
+  /* User persona */
+  .user-persona-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .goals-frustrations {
+    flex-direction: column;
+  }
+
+  .user-persona-card {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .card-persona {
+    width: 100%;
+    /* Make cards take full width on phones */
+    margin-bottom: 15px;
+    /* Add margin between cards */
+  }
+
+  /* Paper wireframe */
+  .paper-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .left-card,
+  .right-card {
+    width: 100%;
+    padding-left: 0;
+    /* Reset left padding for mobile view */
+  }
+
+  .paper-text {
+    width: 97%;
+    padding-left: 0;
+  }
+
+  .paper-text p {
+    padding: 15px;
+
+  }
+
+  .paper-card-image {
+    width: 100%;
+  }
+
+
+  .education-content .row {
+    flex-direction: column;
+    height: auto;
+    margin-bottom: 50px;
+  }
+
+  .education-content .row .education,
+  .education-content .row .internship {
+    flex-basis: 100%;
+    max-width: 100%;
+    margin-top: 30px;
+  }
+
+  /*  */
+
+  /* Ephathy Maps */
+
+  .empathy-content {
+    flex-direction: column;
+    /* Stack cards vertically on smaller screens */
+  }
+
+  .empathy-card,
+  .empathy-card1 {
+    max-width: 100%;
+    /* Ensure cards take full width on smaller screens */
+    margin-bottom: 20px;
+    /* Add space between stacked cards */
+  }
+
+  .footer {
+    padding: 15px;
+  }
+
+  .footer-content {
+    padding: 0 10px;
+  }
+
+}
+
+/* Responsive for devices with a max-width of 430px */
+@media only screen and (max-width: 430px) {
+  h2 {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+
+  .journey-map-content,
+  .userflow-content,
+  .ux-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .journey-map-text,
+  .userflow-text,
+  .ux-text {
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .phone {
+    width: 90%;
+  }
+
+  .card-role {
+    margin-top: 15px;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+
+  .role-card {
+    flex: 1 1 100%;
+  }
+
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px;
+  }
+
+  .section {
+    padding: 0;
+  }
+
+  .mockup-card {
+    max-width: 100%;
+    flex: 1 1 100%;
+    margin-bottom: 15px;
+  }
+
+  .journeymap-text,
+  .userflow-text,
+  .ux-text {
+    padding-left: 0;
+    border-left: none;
+  }
+
+  .journeymap-card,
+  .userflow-card,
+  .ux-card {
+    flex: 1 1 100%;
+    margin-bottom: 15px;
+  }
+
+  .journeymap-content {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .journeymap-text,
+  .journeymap-card {
+    width: 100%;
+    margin-right: 0;
+    max-width: 95%;
+  }
+
+  .journeymap-text {
+    border-left: none;
+    border-top: 4px solid #00EEFF;
+    padding-top: 10px;
+  }
+
+  .journey-map-phones {
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-right: 0;
+  }
+
+  .journeymap-image img {
+    width: 100%;
+  }
+
+  .user-persona-row {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .goals-frustrations {
+    flex-direction: column;
+  }
+
+  .user-persona-card {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .card-persona {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .paper-content {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .left-card,
+  .right-card {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .paper-text {
+    width: 97%;
+    padding-left: 0;
+  }
+
+  .paper-text p {
+    padding: 10px;
+  }
+
+  .paper-card-image {
+    width: 100%;
+  }
+
+  .education-content .row {
+    flex-direction: column;
+    height: auto;
+    margin-bottom: 40px;
+  }
+
+  .education-content .row .education,
+  .education-content .row .internship {
+    flex-basis: 100%;
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  .empathy-content {
+    flex-direction: column;
+  }
+
+  .empathy-card,
+  .empathy-card1 {
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .footer {
+    padding: 10px;
+  }
+
+  .footer-content {
+    padding: 0 5px;
+  }
+}
